@@ -137,3 +137,98 @@ h1{
     width: 0%;
     transition: width 0.1s linear;
 }
+
+
+/* Hamburger */
+.hamburger-menu{
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line{
+    width: 90%;
+    height: 3px;
+    background-color: rgb(245, 237, 237);
+    transition: all 0.8s;
+}
+
+.change .line-1{
+    transform: rotateZ(-405deg) translate(-8px,6px);
+}
+.change .line-2{
+    opacity: 0;
+}
+.change .line-3{
+    transform: rotateZ(405deg) translate(-8px,-6px);
+}
+
+.navbar{
+    width: 300px;
+    height: 100%;
+    background-image: linear-gradient(to top, #ffffff, #ededed, #dbdbdc, #c9c9cb, #b8b8ba, #a9a9ab, #9a9a9c, #8b8c8e, #7b7c7e, #6b6d6e, #5c5e5e, #4e4f4f);    
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20% 0 0 60%;
+    transition: all 0.5s ;
+    
+}
+.change{
+    right: 0;
+}
+
+.nav-list {
+    text-align: center;
+    
+}
+
+.nav-item{
+    margin: 25px;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    font-weight: 300;
+   
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #191a16;
+    position: relative;
+    padding: 2px 0;
+    cursor: pointer;
+    
+}
+
+.nav-link::before,
+.nav-link::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #343939;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+.nav-link::after{
+    bottom: 0;
+    transform-origin: right;
+}
+.nav-link::before{
+    top: 0;
+    transform-origin: left;
+}
+.nav-link:hover::before,
+.nav-link:hover::after{
+    transform: scaleX(1);
+}

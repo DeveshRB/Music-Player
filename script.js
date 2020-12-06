@@ -10,10 +10,10 @@ const title = document.getElementById('title');
 const cover = document.getElementById('cover');
 
 // Song titles
-const songs = ["Can we kiss Forever", "Baby you're worth it", "Get you the moon"];
+const songs = ["Can we kiss Forever", "Baby you're worth it","Wish I was better", "Get you the moon"];
 
 // Keep track of song
-let songIndex = 2;
+let songIndex = 3;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
@@ -100,3 +100,26 @@ audio.addEventListener('timeupdate',updateProgress);
 progressContainer.addEventListener('click',setProgress);
 
 audio.addEventListener('ended',nextSong);
+
+
+
+// Hamburger
+const navbar = document.getElementById("navbar");
+const hamburger = document.getElementById("hamburger-menu");
+
+
+// event listeners
+hamburger.addEventListener('click',()=>{
+    navbar.classList.toggle('change');
+});
+
+
+clickfunc = function(text) {
+   let clickText = text.innerText ;
+
+   const index = songs.indexOf(clickText);
+  
+   loadSong(songs[index]);
+   playSong();
+
+}
