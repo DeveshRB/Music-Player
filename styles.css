@@ -181,7 +181,7 @@ h1{
     align-items: center;
     border-radius: 20% 0 0 20%;
     transition: all 0.5s ;
-    
+    z-index : 20;
 }
 .change{
     right: 0;
