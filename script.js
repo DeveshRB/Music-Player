@@ -10,10 +10,14 @@ const title = document.getElementById('title');
 const cover = document.getElementById('cover');
 
 // Song titles
-const songs = ["Can we kiss Forever", "Baby you're worth it","Wish I was better", "Get you the moon"];
+const songs = ["Hotline Bling","Starboy","Reminder","The Hills","Can't Feel my Face","I Feel it Coming","In the Night","Party Monster","Heartless","Blinding Lights",
+                "After Hours","Call out my Name","Unforgettable","iSPY","Silence","The Nights","Bad and Boujee","Dusk Till Dawn","Pillowtalk","Still got Time",
+                "Stargazing","Highest in the room","BUTTERFLY EFFECT","Wake up","SICKO MODE","Yosemite","Can't Say","Who What","Some Way","No Idea","Swang","No Type",
+                "Circles","WOW","Goodbyes","Candy Paint","Saint Tropez","White Iversion","Congratulations","Pyscho",
+                "Don't you need somebody","Work - Rihanna","Can we kiss Forever", "Baby you're worth it","Wish I was better","Get you the moon"];
 
 // Keep track of song
-let songIndex = 3;
+let songIndex = 0;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);

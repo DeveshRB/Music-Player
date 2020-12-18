@@ -179,7 +179,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20% 0 0 60%;
+    border-radius: 20% 0 0 20%;
     transition: all 0.5s ;
     
 }
@@ -189,7 +189,8 @@ h1{
 
 .nav-list {
     text-align: center;
-    
+    height: 100vh;
+    margin-top: 15px;
 }
 
 .nav-item{
@@ -197,7 +198,11 @@ h1{
     font-size: 20px;
     letter-spacing: 0.7px;
     font-weight: 300;
-   
+}
+
+.navol{
+    max-height: 100vh;
+    overflow: auto;
 }
 
 .nav-link{
@@ -206,7 +211,7 @@ h1{
     position: relative;
     padding: 2px 0;
     cursor: pointer;
-    
+    overflow-y: scroll;
 }
 
 .nav-link::before,
